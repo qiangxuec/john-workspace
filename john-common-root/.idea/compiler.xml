@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="john-microservice-root" />
+        <module name="john-common-root" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -15,9 +15,14 @@
       <module name="john-admin-parent" target="1.8" />
       <module name="john-admin-service" target="1.8" />
       <module name="john-admin-starter" target="1.8" />
+      <module name="john-biz-client" target="1.8" />
+      <module name="john-biz-core" target="1.8" />
       <module name="john-biz-parent" target="1.8" />
-      <module name="john-common-root" target="1.8" />
+      <module name="john-biz-service" target="1.8" />
+      <module name="john-biz-starter" target="1.8" />
+      <module name="john-common-parent" target="1.8" />
       <module name="john-eureka-server" target="1.8" />
+      <module name="john-microservice-root" target="1.8" />
       <module name="john-zuul-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -28,7 +33,11 @@
       <module name="john-admin-parent" options="-parameters" />
       <module name="john-admin-service" options="-parameters" />
       <module name="john-admin-starter" options="-parameters" />
+      <module name="john-biz-client" options="-parameters" />
+      <module name="john-biz-core" options="-parameters" />
       <module name="john-biz-parent" options="-parameters" />
+      <module name="john-biz-service" options="-parameters" />
+      <module name="john-biz-starter" options="-parameters" />
       <module name="john-common-root" options="-parameters" />
       <module name="john-eureka-server" options="-parameters" />
       <module name="john-microservice-root" options="-parameters" />

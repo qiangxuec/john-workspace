@@ -1,6 +1,8 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/john-common-root.iml
+/vcs.xml
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml

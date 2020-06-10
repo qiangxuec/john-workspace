@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/../../ide-workspace/john-common-root/john-common-parent/john-eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../../ide-workspace/john-common-root/john-common-parent/john-eureka-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../john-microservice-root/john-biz-parent/john-biz-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../john-microservice-root/john-biz-parent/john-biz-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../john-microservice-root/john-biz-parent/john-biz-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../john-microservice-root/john-biz-parent/john-biz-starter/src/main/java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
