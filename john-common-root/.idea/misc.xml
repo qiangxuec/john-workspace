@@ -9,16 +9,25 @@
       <list>
         <option value="$PROJECT_DIR$/../john-microservice-root/pom.xml" />
         <option value="$PROJECT_DIR$/john-common-zuul/pom.xml" />
+        <option value="$PROJECT_DIR$/../../ide-workspace/john-common-root/john-common-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../../ide-workspace/john-common-root/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/../../ide-workspace/john-common-root/john-common-parent/john-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../../ide-workspace/john-common-root/john-common-parent/pom.xml" />
         <option value="$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-client/pom.xml" />
         <option value="$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-core/pom.xml" />
         <option value="$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-service/pom.xml" />
         <option value="$PROJECT_DIR$/../john-microservice-root/john-admin-parent/john-admin-starter/pom.xml" />
         <option value="$PROJECT_DIR$/../john-microservice-root/john-admin-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-microservice-root/john-biz-parent/john-biz-client/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-microservice-root/john-biz-parent/john-biz-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-microservice-root/john-biz-parent/john-biz-service/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-microservice-root/john-biz-parent/john-biz-starter/pom.xml" />
         <option value="$PROJECT_DIR$/../john-microservice-root/john-biz-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-microservice-root/pom.xml" />
       </set>
     </option>
   </component>
