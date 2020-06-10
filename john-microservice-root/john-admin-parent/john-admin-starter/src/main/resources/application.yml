@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: john-admin-starter
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/john_microservice?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    username: root
+    password: xueqiang
+server:
+  port: 8100
+  servlet:
+    context-path: /admin
+#eureka:
+  #client:
+    #serviceUrl:
+    #  defaultZone: http://localhost:8761/eureka/
+swagger:
+  property:
+    title: john-admin-service
+    contactName: john_xue
+    contact-email: qiangxuec@163.com
+    contate-url: http://www.baidu.com
+    base-package: com.john.service
+    description: welcome
+    version: v1.0
+admin:
+  eureka:
+    enabled: false
+mybatis:
+  mapper-locations: com/john/service/**/*.xml

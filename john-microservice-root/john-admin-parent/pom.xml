@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>john-microservice-root</artifactId>
+        <groupId>john.microservice.root</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>john.admin.parent</groupId>
+    <artifactId>john-admin-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <modules>
+        <module>john-admin-core</module>
+        <module>john-admin-client</module>
+        <module>john-admin-service</module>
+        <module>john-admin-starter</module>
+    </modules>
+
+    <properties>
+        <admin.version>0.0.1-SNAPSHOT</admin.version>
+    </properties>
+
+    <packaging>pom</packaging>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>john.admin.core</groupId>
+                <artifactId>john-admin-core</artifactId>
+                <version>${admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>john.admin.service</groupId>
+                <artifactId>john-admin-service</artifactId>
+                <version>${admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>john.admin.client</groupId>
+                <artifactId>john-admin-client</artifactId>
+                <version>${admin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>john.admin.starter</groupId>
+                <artifactId>john-admin-starter</artifactId>
+                <version>${admin.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>

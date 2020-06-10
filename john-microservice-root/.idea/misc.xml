@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/john-admin-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/john-admin-parent/john-admin-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/john-admin-parent/john-admin-service/pom.xml" />
+        <option value="$PROJECT_DIR$/john-admin-parent/john-admin-core/pom.xml" />
+        <option value="$PROJECT_DIR$/john-admin-parent/john-admin-client/pom.xml" />
+        <option value="$PROJECT_DIR$/john-biz-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/john-biz-parent/john-biz-starter/pom.xml" />
+        <option value="$PROJECT_DIR$/john-biz-parent/john-biz-service/pom.xml" />
+        <option value="$PROJECT_DIR$/john-biz-parent/john-biz-client/pom.xml" />
+        <option value="$PROJECT_DIR$/john-biz-parent/john-biz-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/john-compnents-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/john-common-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/john-compnents-parent/john-compnent-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/john-compnents-parent/john-compnent-bom/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/john-components-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/john-components-parent/john-component-bom/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/john-components-parent/john-component-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/john-components-parent/john-component-core/pom.xml" />
+        <option value="$PROJECT_DIR$/../john-common-root/john-components-parent/john-component-pagehelper/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
