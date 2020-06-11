@@ -12,5 +12,11 @@
     <artifactId>john-common-root</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>john-components-parent</module>
+        <module>john-common-parent</module>
+    </modules>
 
 </project>

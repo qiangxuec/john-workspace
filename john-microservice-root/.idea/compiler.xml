@@ -6,24 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="john-admin-starter" />
-        <module name="john-admin-service" />
-        <module name="john-component-core" />
-        <module name="john-biz-service" />
-        <module name="john-component-pagehelper" />
         <module name="john-eureka-server" />
-        <module name="john-biz-client" />
+        <module name="john-component-bom" />
         <module name="john-biz-core" />
-        <module name="john-admin-core" />
-        <module name="john-admin-client" />
-        <module name="john-component-swagger" />
+        <module name="john-component-pagehelper" />
+        <module name="john-biz-service" />
+        <module name="john-component-core" />
         <module name="john-biz-starter" />
+        <module name="john-component-swagger" />
+        <module name="john-admin-core" />
+        <module name="john-admin-starter" />
+        <module name="john-biz-client" />
+        <module name="john-admin-client" />
+        <module name="john-admin-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="john-common-parent (1)" target="1.8" />
       <module name="john-compnent-swagger" target="1.8" />
-      <module name="john-component-bom" target="1.8" />
       <module name="john-swagger-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
