@@ -11,20 +11,19 @@
         <module name="john-component-core" />
         <module name="john-biz-service" />
         <module name="john-component-pagehelper" />
-        <module name="john-biz-client" />
         <module name="john-eureka-server" />
-        <module name="john-component-swagger" />
+        <module name="john-biz-client" />
         <module name="john-biz-core" />
         <module name="john-admin-core" />
         <module name="john-admin-client" />
-        <module name="john-common-root" />
-        <module name="john-component-bom" />
+        <module name="john-component-swagger" />
         <module name="john-biz-starter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="john-common-parent (1)" target="1.8" />
       <module name="john-compnent-swagger" target="1.8" />
+      <module name="john-component-bom" target="1.8" />
       <module name="john-swagger-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
