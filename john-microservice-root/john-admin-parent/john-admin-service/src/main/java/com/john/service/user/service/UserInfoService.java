@@ -1,9 +1,12 @@
 package com.john.service.user.service;
 
 import com.john.service.user.dao.IUserInfoDao;
+import com.john.service.user.dto.UserInfoDto;
 import com.john.service.user.proxy.UserInfoProxy;
 import com.john.service.user.vo.UserInfoVo;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -23,7 +26,8 @@ public class UserInfoService {
         return userInfoProxy.getUserList(userInfoVo);
     }
 
-    public List<UserInfoVo> getUserListPage(UserInfoVo userInfoVo){
+    public List<UserInfoVo> getUserListPage(UserInfoDto userInfoDto){
+        UserInfoVo userInfoVo = fixedUserInfoVo(userInfoDto);
         return userInfoProxy.getUserListPage(userInfoVo);
     }
 
@@ -40,11 +44,27 @@ public class UserInfoService {
     * 根据ID更新用户信息
     *@author john
     *@date 2020/6/5 22:43
-    *@param userInfoVo
+    *@param userInfoDto
     *@return int
     */
-    public int updateUser(UserInfoVo userInfoVo){
+    public int updateUser(UserInfoDto userInfoDto){
+        UserInfoVo userInfoVo = fixedUserInfoVo(userInfoDto);
         return userInfoProxy.updateUser(userInfoVo);
+    }
+
+    /**
+    *封装VO
+    *@author john
+    *@date 2020/6/13 10:14
+    *@param userInfoDto
+    *@return com.john.service.user.vo.UserInfoVo
+    */
+    private UserInfoVo fixedUserInfoVo(UserInfoDto userInfoDto) {
+        UserInfoVo userInfoVo = new UserInfoVo();
+        if(null != userInfoDto){
+            BeanUtils.copyProperties(userInfoDto, userInfoVo);
+        }
+        return userInfoVo;
     }
 
     /**
@@ -53,7 +73,8 @@ public class UserInfoService {
     *@date 2020/6/5 22:44
     *@return int
     */
-    public int createUser(UserInfoVo userInfoVo){
+    public int createUser(UserInfoDto userInfoDto){
+        UserInfoVo userInfoVo = fixedUserInfoVo(userInfoDto);
         return userInfoProxy.createUser(userInfoVo);
     }
 

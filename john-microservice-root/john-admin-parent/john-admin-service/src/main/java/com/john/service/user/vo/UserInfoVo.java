@@ -1,13 +1,14 @@
 package com.john.service.user.vo;
 
 import com.john.admin.vo.PageVo;
+import com.john.core.vo.BaseVo;
 
 /**
  * userInfo vo
  */
-public class UserInfoVo {
+public class UserInfoVo extends BaseVo {
 
-    private int id;
+    private long id;
     private String name;
     private String mail;
     //分页
@@ -21,20 +22,20 @@ public class UserInfoVo {
         this.pageVo = pageVo;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
     }
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getMail() {

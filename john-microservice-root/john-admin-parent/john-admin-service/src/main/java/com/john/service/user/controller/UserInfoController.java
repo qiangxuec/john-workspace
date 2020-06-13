@@ -1,6 +1,7 @@
 package com.john.service.user.controller;
 
 import com.john.core.vo.CommonResultInfo;
+import com.john.service.user.dto.UserInfoDto;
 import com.john.service.user.service.UserInfoService;
 import com.john.service.user.vo.UserInfoVo;
 import io.swagger.annotations.ApiOperation;
@@ -28,8 +29,8 @@ public class UserInfoController {
 
     @RequestMapping(value = "/list/page",method = RequestMethod.POST)
     @ApiOperation(value = "分页查询用户列表")
-    public CommonResultInfo<List<UserInfoVo>> getUserListPage(@RequestBody() UserInfoVo userInfoVo){
-        List<UserInfoVo> list = userInfoService.getUserListPage(userInfoVo);
+    public CommonResultInfo<List<UserInfoVo>> getUserListPage(@RequestBody() UserInfoDto userInfoDto){
+        List<UserInfoVo> list = userInfoService.getUserListPage(userInfoDto);
         return CommonResultInfo.buildSuccess(list);
     }
 
@@ -42,15 +43,15 @@ public class UserInfoController {
 
     @RequestMapping(value="/",method = RequestMethod.POST)
     @ApiOperation(value = "创建用户信息")
-    public CommonResultInfo<Integer> createUser(@RequestBody() UserInfoVo userInfoVo){
-        return CommonResultInfo.buildSuccess(userInfoService.createUser(userInfoVo));
+    public CommonResultInfo<Integer> createUser(@RequestBody() UserInfoDto userInfoDto){
+        return CommonResultInfo.buildSuccess(userInfoService.createUser(userInfoDto));
     }
 
     @RequestMapping(value="/{id}",method = RequestMethod.PUT)
     @ApiOperation(value = "更新用户信息")
-    public CommonResultInfo<Integer> updateUser(@PathVariable("id") Integer id,@RequestBody() UserInfoVo userInfoVo){
-        userInfoVo.setId(id);
-        return CommonResultInfo.buildSuccess(userInfoService.updateUser(userInfoVo));
+    public CommonResultInfo<Integer> updateUser(@PathVariable("id") Integer id,@RequestBody() UserInfoDto userInfoDto){
+        userInfoDto.setId(id);
+        return CommonResultInfo.buildSuccess(userInfoService.updateUser(userInfoDto));
     }
 
     @RequestMapping(value="/{id}",method = RequestMethod.DELETE)

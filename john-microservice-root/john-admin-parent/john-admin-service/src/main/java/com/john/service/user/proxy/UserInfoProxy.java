@@ -3,6 +3,7 @@ package com.john.service.user.proxy;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.john.admin.vo.PageVo;
+import com.john.core.utils.Sequence;
 import com.john.service.user.dao.IUserInfoDao;
 import com.john.service.user.vo.UserInfoVo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -81,6 +82,7 @@ public class UserInfoProxy {
     */
     @Transactional
     public int createUser(UserInfoVo userInfoVo){
+        userInfoVo.setId(Sequence.next());
         return iUserInfoDao.createUser(userInfoVo);
     }
 

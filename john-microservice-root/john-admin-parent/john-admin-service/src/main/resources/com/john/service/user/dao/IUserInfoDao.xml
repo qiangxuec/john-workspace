@@ -14,17 +14,17 @@
     <update id="updateUser" parameterType="com.john.service.user.vo.UserInfoVo">
         update tpl_user_t set
             name = #{name, jdbcType=VARCHAR},
-            mail = #{mail, jdbcType=VARCHAR} where id = #{id, jdbcType=INTEGER}
+            mail = #{mail, jdbcType=VARCHAR} where id = #{id, jdbcType=BIGINT}
     </update>
 
     <delete id="deleteUser" parameterType="java.lang.Integer">
-        delete from tpl_user_t where id = #{id, jdbcType=INTEGER}
+        delete from tpl_user_t where id = #{id, jdbcType=BIGINT}
     </delete>
 
     <insert id="createUser" parameterType="com.john.service.user.vo.UserInfoVo">
         INSERT tpl_user_t (id, NAME, mail)
         VALUES
-	    (#{id, jdbcType=INTEGER}, #{name, jdbcType=VARCHAR}, #{mail, jdbcType=VARCHAR})
+	    (#{id, jdbcType=BIGINT}, #{name, jdbcType=VARCHAR}, #{mail, jdbcType=VARCHAR})
     </insert>
     
 </mapper>

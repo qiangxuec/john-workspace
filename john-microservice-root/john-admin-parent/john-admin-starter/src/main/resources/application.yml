@@ -28,3 +28,6 @@ admin:
     enabled: false
 mybatis:
   mapper-locations: com/john/service/**/*.xml
+logging:
+  level:
+    com.john.service.user.dao: debug
