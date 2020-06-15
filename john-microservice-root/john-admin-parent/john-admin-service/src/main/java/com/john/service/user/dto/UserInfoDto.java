@@ -1,5 +1,7 @@
 package com.john.service.user.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
@@ -7,6 +9,7 @@ import io.swagger.annotations.ApiModelProperty;
 public class UserInfoDto{
 
     @ApiModelProperty(value = "无需传入")
+    @JsonSerialize(using = ToStringSerializer.class)
     private long id;
     @ApiModelProperty(value = "用户姓名")
     private String name;

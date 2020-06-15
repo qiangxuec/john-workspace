@@ -1,5 +1,7 @@
 package com.john.service.user.vo;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import com.john.admin.vo.PageVo;
 import com.john.core.vo.BaseVo;
 
@@ -8,8 +10,11 @@ import com.john.core.vo.BaseVo;
  */
 public class UserInfoVo extends BaseVo {
 
+    @JsonSerialize(using = ToStringSerializer.class)
     private long id;
+
     private String name;
+
     private String mail;
     //分页
     private PageVo pageVo;

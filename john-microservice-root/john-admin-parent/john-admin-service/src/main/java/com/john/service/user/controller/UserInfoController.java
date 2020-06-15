@@ -49,7 +49,7 @@ public class UserInfoController {
 
     @RequestMapping(value="/{id}",method = RequestMethod.PUT)
     @ApiOperation(value = "更新用户信息")
-    public CommonResultInfo<Integer> updateUser(@PathVariable("id") Integer id,@RequestBody() UserInfoDto userInfoDto){
+    public CommonResultInfo<Integer> updateUser(@PathVariable("id") long id,@RequestBody() UserInfoDto userInfoDto){
         userInfoDto.setId(id);
         return CommonResultInfo.buildSuccess(userInfoService.updateUser(userInfoDto));
     }

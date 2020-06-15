@@ -8,18 +8,39 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>john.components.parent</groupId>
     <artifactId>john-components-parent</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
 
     <packaging>pom</packaging>
 
+    <properties>
+        <common.version>0.0.1-SNAPSHOT</common.version>
+    </properties>
+
     <modules>
-        <module>john-component-bom</module>
         <module>john-component-swagger</module>
         <module>john-component-core</module>
         <module>john-component-pagehelper</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>john.component.core</groupId>
+                <artifactId>john-component-core</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>john.component.swagger</groupId>
+                <artifactId>john-component-swagger</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>john.component.pagehelper</groupId>
+                <artifactId>john-component-pagehelper</artifactId>
+                <version>${common.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
 
 </project>
