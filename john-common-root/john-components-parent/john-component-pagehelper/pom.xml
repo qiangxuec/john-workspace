@@ -14,17 +14,20 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>john.component.core</groupId>
+            <artifactId>john-component-core</artifactId>
+        </dependency>
+
         <!--pagehelper version:5.1.2 -> 1.2.3  -->
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
-            <version>5.1.2</version>
         </dependency>
 
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-autoconfigure</artifactId>
-            <version>1.2.3</version>
         </dependency>
 
     </dependencies>

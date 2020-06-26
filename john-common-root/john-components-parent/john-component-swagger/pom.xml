@@ -12,28 +12,26 @@
     <artifactId>john-component-swagger</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <properties>
-        <swagger.version>2.9.2</swagger.version>
-    </properties>
-
     <dependencies>
+
+        <dependency>
+            <groupId>john.component.core</groupId>
+            <artifactId>john-component-core</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
-            <version>${swagger.version}</version>
         </dependency>
 
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-            <version>${swagger.version}</version>
         </dependency>
 
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-annotations</artifactId>
-            <version>1.5.20</version>
         </dependency>
 
         <dependency>

@@ -12,10 +12,6 @@
     <groupId>john.admin.starter</groupId>
     <artifactId>john-admin-starter</artifactId>
 
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
     <dependencies>
 
         <dependency>
@@ -39,7 +35,6 @@
         <dependency>
             <groupId>org.mybatis.spring.boot</groupId>
             <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.1.2</version>
         </dependency>
 
         <!--
@@ -54,12 +49,6 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-            <version>2.0.4</version>
-        </dependency>
     </dependencies>
 
     <build>
@@ -77,7 +66,6 @@
                         </goals>
                     </execution>
                 </executions>
-
             </plugin>
         </plugins>
     </build>
