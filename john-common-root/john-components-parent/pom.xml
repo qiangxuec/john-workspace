@@ -21,6 +21,7 @@
         <module>john-component-swagger</module>
         <module>john-component-core</module>
         <module>john-component-pagehelper</module>
+        <module>john-component-bom</module>
     </modules>
 
     <dependencyManagement>
@@ -38,6 +39,11 @@
             <dependency>
                 <groupId>john.component.pagehelper</groupId>
                 <artifactId>john-component-pagehelper</artifactId>
+                <version>${component.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>john.component.bom</groupId>
+                <artifactId>john-component-bom</artifactId>
                 <version>${component.version}</version>
             </dependency>
         </dependencies>

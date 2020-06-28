@@ -8,30 +8,28 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>john.component.bom</groupId>
     <artifactId>john-component-bom</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
 
     <properties>
-        <swagger.version>0.0.1-SNAPSHOT</swagger.version>
+        <component.version>0.0.1-SNAPSHOT</component.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>john.component.swagger</groupId>
-                <artifactId>john-component-swagger</artifactId>
-                <version>${swagger.version}</version>
-            </dependency>
-            <dependency>
                 <groupId>john.component.core</groupId>
                 <artifactId>john-component-core</artifactId>
-                <version>${swagger.version}</version>
+                <version>${component.version}</version>
             </dependency>
             <dependency>
                 <groupId>john.component.pagehelper</groupId>
                 <artifactId>john-component-pagehelper</artifactId>
-                <version>${swagger.version}</version>
+                <version>${component.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>john.component.swagger</groupId>
+                <artifactId>john-component-swagger</artifactId>
+                <version>${component.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
