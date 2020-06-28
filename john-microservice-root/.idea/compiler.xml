@@ -12,11 +12,11 @@
         <module name="john-biz-service" />
         <module name="john-component-swagger" />
         <module name="john-biz-starter" />
-        <module name="john-biz-client" />
+        <module name="john-eureka-server" />
         <module name="john-component-pagehelper" />
         <module name="john-admin-core" />
         <module name="john-admin-starter" />
-        <module name="john-eureka-server" />
+        <module name="john-biz-client" />
         <module name="john-admin-client" />
         <module name="john-admin-service" />
       </profile>
