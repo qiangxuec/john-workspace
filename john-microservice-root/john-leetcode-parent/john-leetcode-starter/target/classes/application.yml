@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: john-leetcode-starter
+server:
+  port: 8200
+  servlet:
+    context-path: /leetcode

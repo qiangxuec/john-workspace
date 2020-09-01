@@ -19,6 +19,12 @@
     <modules>
         <module>john-admin-parent</module>
         <module>john-biz-parent</module>
+        <module>john-leetcode-parent</module>
     </modules>
+
+    <properties>
+        <leetcode.version>0.0.1-SNAPSHOT</leetcode.version>
+    </properties>
+
 
 </project>
