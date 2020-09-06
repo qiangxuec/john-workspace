@@ -12,6 +12,7 @@
 
     <packaging>pom</packaging>
 
+    <groupId>john.leetcode.parent</groupId>
     <artifactId>john-leetcode-parent</artifactId>
 
     <modules>

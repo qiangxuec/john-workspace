@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2020/9/1 21:35
  */
 @Configuration
-@ComponentScan("com.**.service")
+@ComponentScan("com.john.leetcode.**.service")
 public class leetCodeConfig {
 
 }

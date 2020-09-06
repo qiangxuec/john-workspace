@@ -5,3 +5,12 @@ server:
   port: 8200
   servlet:
     context-path: /leetcode
+swagger:
+  property:
+    title: john-leetcode-service
+    contactName: john
+    contact-email: qiangxuec@163.com
+    contate-url: http://www.baidu.com
+    base-package: com.john.leetcode.service
+    description: Welcome to leetcode
+    version: v1.0.0
