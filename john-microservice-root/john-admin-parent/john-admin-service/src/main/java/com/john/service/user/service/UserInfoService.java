@@ -1,14 +1,13 @@
 package com.john.service.user.service;
 
-import com.john.service.user.dao.IUserInfoDao;
 import com.john.service.user.dto.UserInfoDto;
 import com.john.service.user.proxy.UserInfoProxy;
 import com.john.service.user.vo.UserInfoVo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 /**
@@ -19,6 +18,8 @@ import java.util.List;
 @Service
 public class UserInfoService {
 
+    private static final Logger logger = LoggerFactory.getLogger(UserInfoService.class);
+
     @Autowired
     private UserInfoProxy userInfoProxy;
 
@@ -28,6 +29,7 @@ public class UserInfoService {
 
     public List<UserInfoVo> getUserListPage(UserInfoDto userInfoDto){
         UserInfoVo userInfoVo = fixedUserInfoVo(userInfoDto);
+        logger.info("userInfo:"+userInfoVo.getId());
         return userInfoProxy.getUserListPage(userInfoVo);
     }
 
