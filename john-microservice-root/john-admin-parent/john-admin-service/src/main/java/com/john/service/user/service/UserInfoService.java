@@ -30,7 +30,8 @@ public class UserInfoService {
     public List<UserInfoVo> getUserListPage(UserInfoDto userInfoDto){
         UserInfoVo userInfoVo = fixedUserInfoVo(userInfoDto);
         logger.info("userInfo:"+userInfoVo.getId());
-        return userInfoProxy.getUserListPage(userInfoVo);
+//        return userInfoProxy.getUserListPage(userInfoVo);
+        return null;
     }
 
     /**

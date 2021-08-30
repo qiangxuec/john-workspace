@@ -31,3 +31,4 @@ mybatis:
 logging:
   level:
     com.john.service.user.dao: debug
+  config: classpath:logback-spring.xml
